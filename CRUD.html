@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>CRUD</title>
+</head>
+
+<body>
+
+
+    <div class="all">
+        <div class="head" id="head">
+            <h2>CRUD</h2>
+            <p>PROUDUCT MANGMENT SYSTEM</p>
+        </div>
+        <div class="input" id="input">
+            <input type="text" id="title" placeholder="title">
+            <div class="center">
+                <input onkeyup="getTotal()" type="number" placeholder="price" id="price">
+                <input onkeyup="getTotal()" type="number" placeholder="taxes" id="taxes">
+                <input onkeyup="getTotal()" type="number" placeholder="ads" id="ads">
+                <input onkeyup="getTotal()" type="number" placeholder="discount" id="discount">
+                <small id="total"></small>
+            </div>
+            <input type="number" placeholder="count" id="count">
+            <input type="text" placeholder="category" id="category">
+            <button id="submit">create</button>
+        </div>
+        <div class="output" id="output">
+
+            <input type="search" id="search" placeholder="search" onkeyup="SearchData(this.value)">
+
+            <button onclick="getSearchMood(this.id)" id="searchTitle">Search By Title</button>
+            <button onclick="getSearchMood(this.id)" id="searchCategory"> Search By Category</button>
+<div id="deleteAll">
+
+</div>
+            <table>
+
+                <th>ID</th>
+                <th>TITLE</th>
+                <th>PRICE</th>
+                <th>TAXES</th>
+                <th>ADS</th>
+                <th>DISCOUNT</th>
+                <th>TOTAL</th>
+                <th>COUNT</th>
+                <th>CATEGORY</th>
+                <th>UPDATE</th>
+                <th>DELETE</th>
+<tbody id="tbody">
+
+</tbody>
+
+
+
+
+
+
+
+
+            </table>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="action.js"></script>
+</body>
+
+</html>

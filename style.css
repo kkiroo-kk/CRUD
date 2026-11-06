@@ -1,0 +1,164 @@
+:root {
+    --bg-color: #0f172a;
+    --table-color: #1e293b;
+    --button-color: #1092aa;
+    --total-color: #2dadc1;
+}
+
+* {
+    margin: 0;
+
+}
+
+body {
+    background-color: var(--bg-color);
+    color: whitesmoke;
+}
+
+.head {
+    text-align: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.head h2 {
+    margin-bottom: 10px;
+}
+
+.input,
+.output {
+    width: 100%;
+    width: 80%;
+    justify-content: center;
+    justify-self: center;
+}
+
+#title,
+#price,
+#taxes,
+#ads,
+#discount,
+#count,
+#category,
+#search {
+    background-color: var(--table-color);
+    border: none;
+    border-radius: 5px;
+    height: 40px;
+    margin: 5px;
+    padding: 5px;
+    color: rgb(22, 224, 224);
+    outline: none;
+    transition: 0.3s;
+}
+
+#title,
+#search {
+    width: 100%;
+}
+
+#total {
+    background-color: var(--total-color);
+    color: #000;
+    font-size: 18px;
+    border-radius: 5px;
+    padding: 10px;
+    height: 23px;
+    width: calc(fit-content +30px);
+    align-self: center;
+    /* color: white; */
+}
+
+.center {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+#price,
+#taxes,
+#ads,
+#discount {
+    width: 200px;
+}
+
+#count,
+#category {
+    display: block;
+    width: 100%;
+    margin-bottom: 8px;
+}
+
+button {
+    width: 100%;
+    height: 40px;
+    border-radius: 20px;
+    margin: 10px;
+    background-color: var(--button-color);
+    border: none;
+    font-size: 18px;
+    color: #f4e8e8;
+    transition: 0.6s;
+}
+
+input:focus {
+    transform: scale(1.05);
+}
+
+button:hover {
+    background-color: #1b7383;
+    letter-spacing: 1px;
+}
+
+#total::before {
+    content: "total : ";
+}
+
+#searchTitle,
+#searchCategory {
+    width: 30%;
+    margin: 10px 100px;
+}
+
+#searchCategory {
+    justify-self: end;
+}
+
+
+table {
+    width: 100%;
+    table-layout: fixed;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    margin-top: 30px;
+}
+
+
+
+
+th {
+    font-size: 20px;
+    color: rgb(217, 215, 247);
+    margin-bottom: 25px;
+}
+
+th,
+td {
+    padding: 1px;
+
+}
+
+table button {
+    width: fit-content;
+    height: 35px;
+    padding: 10px;
+    align-items: center;
+    text-align: center;
+    font-size: 15px;
+}
+
+#deleteAll {
+    margin: 10px 0;
+}
