@@ -139,14 +139,14 @@ table {
 
 
 th {
-    font-size: 20px;
+    font-size: 18px;
     color: rgb(217, 215, 247);
     margin-bottom: 25px;
 }
 
 th,
 td {
-    padding: 1px;
+    padding: 2px;
 
 }
 
@@ -161,4 +161,129 @@ table button {
 
 #deleteAll {
     margin: 10px 0;
+}
+@media(max-width:1185px){
+table button {
+    width: 70px;
+    height: 25px;
+    padding: 5px;
+    font-size: 13px;
+}
+th{
+    padding: 10px;
+    font-size: 10px;
+}
+}
+@media(max-width:1040px){
+table button {
+    width: 50px;
+    height: 25px;
+    padding: 3px;
+    font-size: 10px;
+font-size: 10px;
+}
+}
+@media(max-width:890px){
+table button {
+    width: 40px;
+    height: 20px;
+    padding: 3px;
+    font-size: 9px;
+}
+th{
+    padding: 15px;
+    font-size: 8px;
+}
+}
+@media(max-width:700px){
+    .head {
+        margin: 18px 0 24px;
+    }
+
+    .input,
+    .output {
+        width: 94%;
+        margin: 0 auto;
+    }
+
+    .input,
+    .output,
+    .center,
+    #title,
+    #price,
+    #taxes,
+    #ads,
+    #discount,
+    #count,
+    #category,
+    #search,
+    button {
+        box-sizing: border-box;
+    }
+
+    #title,
+    #search,
+    #count,
+    #category {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    .center {
+        gap: 8px;
+    }
+
+    #price,
+    #taxes,
+    #ads,
+    #discount {
+        width: calc(50% - 4px);
+        margin: 0;
+    }
+
+    #total {
+        height: auto;
+        margin: 4px 0;
+    }
+
+    button {
+        margin: 8px 0;
+    }
+
+    #searchTitle,
+    #searchCategory {
+        width: calc(50% - 4px);
+        margin: 6px 0;
+        font-size: 14px;
+    }
+
+    .output {
+        overflow-x: auto;
+    }
+
+    table {
+        display: table;
+        width: 100%;
+        min-width: 760px;
+        table-layout: fixed;
+        padding: 3px;
+        margin-top: 16px;
+    }
+
+    th,
+    td {
+        padding: 4px 2px;
+        font-size: 10px;
+    }
+
+    table button {
+        width: 58px;
+        height: 28px;
+        padding: 4px;
+        font-size: 10px;
+    }
+
+    #deleteAll button {
+        width: 100%;
+    }
 }
